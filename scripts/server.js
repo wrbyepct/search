@@ -7,7 +7,7 @@ require("dotenv").config();
 const app = express();
 const port = 3000;
 
-// Allowe domain 
+// Allowed domain 
 app.use(cors({ origin: "http://127.0.0.1:5500" }));
 
 const apiKey = process.env.GOOGLE_SEARCH_API;

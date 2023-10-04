@@ -2,7 +2,7 @@
 
 // Screen variable map 
 $breakpoints-up: ("large": "75em");
-$breakpoints-down: ("medium": "74.9375em");
+$breakpoints-down: ("medium": "74.9375em", "small": "66.875rem");
 
 @mixin breakpoint-up($size) {
     @media (min-width: map-get($breakpoints-up, $size)) {

@@ -9,11 +9,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./scss/style.css" />
-    <script src="./scripts/app.js" defer></script>
   </head>
-  <body>
+  <body class="day-theme">
     <!-- Links to Other Pages Section -->
-    <div class="other-page-container">
+    <div class="header">
+      <div>
+        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="google logo">
+      </div>
       <div class="search-link">
         <a href="./index.html">Homepage</a>
       </div>
@@ -21,63 +23,121 @@
         <a href="./image_search.html">Image Search</a>
       </div>
     </div>
+    
+    <div class="title">
+      <label style="margin-left:10px">Advancded Search</label>
+    </div>
     <!-- Main Content Section -->
-    <div class="main-container">
-      <div class="google-img">
-        <img src="./src/google.png" alt="google logo" width="272" height="92" />
-      </div>
-      <form class="search-box" action="https://google.com/search">
-        <!-- Search Fields -->
-        <div class="search-field-container">
-          <div class="search-field-box">
+    <div class="form-container">
+      
+      <form action="https://google.com/search">
+        <!-- Search Fields Form Header -->
+        <div class="query-header-container query-flexbox">
+          <div class="query-title">
+            <span>Find pages with...</span>
+          </div>
+
+          <div></div>
+
+          <div class="query-instruction do-this-font break-hidden">
+            <span>To do this in the search box.</span>
+          </div>
+        </div>
+        <!-- Search Fields Form Fields -->
+        <div class="query-field-container query-flexbox">
+          <div class="query-title font-sm">
+            <span>all these words:</span>
+          </div>
+
+          <div class="">
             <input
-              class="search-field"
+              class="query-field"
               type="text"
-              placeholder="search all these words"
               name="as_q"
             />
           </div>
+
+          <div class="query-instruction-suffix break-hidden">
+            <span>Type the important words: tri-colour rat terrier</span>
+          </div>
         </div>
-        <div class="search-field-container">
-          <div class="search-field-box">
+        <div class="query-field-container query-flexbox">
+          <div class="query-title font-sm">
+            <span>this exact word or phrase:</span>
+          </div>
+
+          <div class="">
             <input
-              class="search-field"
+              class="query-field "
               type="text"
-              placeholder="search the exact words"
               name="as_epq"
             />
           </div>
+
+          <div class="query-instruction-suffix break-hidden">
+            <span>Put exact words in quotes: "rat terrier"</span>
+          </div>
         </div>
-        <div class="search-field-container">
-          <div class="search-field-box">
+        <div class="query-field-container query-flexbox">
+          <div class="query-title font-sm">
+            <span>any of these words:</span>
+          </div>
+
+          <div class="">
             <input
-              class="search-field"
+              class="query-field"
               type="text"
-              placeholder="search any of these words"
               name="as_oq"
             />
           </div>
+
+          <div class="query-instruction-suffix break-hidden">
+            <span>Type OR between all the words you want: miniature OR standard</span>
+          </div>
         </div>
-        <div class="search-field-container">
-          <div class="search-field-box">
+        <div class="query-field-container query-flexbox">
+          <div class="query-title font-sm">
+            <span>none of these words:</span>
+          </div>
+
+          <div class="">
             <input
-              class="search-field"
+              class="query-field"
               type="text"
-              placeholder="search none of these words"
               name="as_eq"
             />
           </div>
+
+          <div class="query-instruction-suffix break-hidden">
+            <span>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
+          </div>
         </div>
+        
         <!-- Search Button Section -->
-        <div class="search-btn-container">
-          <input
-            id="advanced-search-btn"
-            class="search-btn"
-            type="submit"
-            value="Advanced Search"
-          />
+        <div class="advaned-search-btn-container">
+          <div class="advanced-search-btn">
+            <input
+              id="advanced-search-btn"
+              class="search-btn"
+              type="submit"
+              value="Advanced Search"
+            />
+          </div>
+          <div class="filling break-hidden">
+          </div>
         </div>
+        
       </form>
+    </div>
+    <div id="advanced-search-bottom-info" class="bottom-info">
+      <div class="taiwan">Taiwan</div>
+      <div id="advanced-search-bottom-info-box" class="bottom-info-box">
+        <div class="bottom-info-part">
+          <a href="./index.html">Help</a>
+          <a href="./index.html">Privacy</a>
+          <a href="./index.html">Teams</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

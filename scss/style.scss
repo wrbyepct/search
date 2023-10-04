@@ -34,9 +34,9 @@ body {
     flex-direction: column;
     text-align: center;
     height: 100%;
-    // >:nth-child(4), > :nth-child(2) {
-    //     flex-grow: 1;
-    // }
+    .offered-in {
+        flex-basis: 15.375rem;
+    }
 }
 
 // Google logo image

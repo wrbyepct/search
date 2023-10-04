@@ -172,6 +172,9 @@ body {
   text-align: center;
   height: 100%;
 }
+.main-container .offered-in {
+  flex-basis: 15.375rem;
+}
 
 .google-img {
   display: flex;

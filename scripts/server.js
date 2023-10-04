@@ -13,6 +13,7 @@ app.use(cors({ origin: "http://127.0.0.1:5500" }));
 const apiKey = process.env.GOOGLE_SEARCH_API;
 const cx = process.env.CX;
 
+// Setting up route and method
 app.get("/api/search", async (req, res) => {
   try {
     const query = req.query.q;

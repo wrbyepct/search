@@ -112,10 +112,12 @@
         color: $font-color; 
         background: #4d90fe;
         margin: 0.625rem 0;
+        padding: 0.359375rem 0.75rem;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 0.8125rem;
+        font-size: 0.6875rem;
         border: 1px solid #3079ed;
+        border-radius: 2px;
         &:hover {
             border: 1px solid white;
         }
